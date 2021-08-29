@@ -39,18 +39,21 @@ Feature: Campaign page
       Models Header
       XC90 SUV Header
       XC90
+      XC90 Image
       XC90 Learn
       XC90 Shop
     When user clicks on Next in Models Section
     Then the below options should be available in the Models Section:
       V90 Estate Header
       V90
+      V90 Image
       V90 Learn
       V90 Shop
     When user clicks on Previous in Models Section
     Then the below options should be available in the Models Section:
       XC90 SUV Header
       XC90
+      XC90 Image
       XC90 Learn
       XC90 Shop
     And the below options should be available in the Models Section:
