@@ -4,7 +4,6 @@ Feature: Campaign page
   - The page also has weblinks for viewing and purchasing the different Volvo cars
 
   Background: User is opening Volvo Safety Campaign page
-    Given user is opening the Volvo Safety Campaign page
 
   Scenario: User is verifying the list of safety features
     Then the below options should be available in the Safety Section:
@@ -39,21 +38,6 @@ Feature: Campaign page
       Models Header
       XC90 SUV Header
       XC90
-      XC90 Image
-      XC90 Learn
-      XC90 Shop
-    When user clicks on Next in Models Section
-    Then the below options should be available in the Models Section:
-      V90 Estate Header
-      V90
-      V90 Image
-      V90 Learn
-      V90 Shop
-    When user clicks on Previous in Models Section
-    Then the below options should be available in the Models Section:
-      XC90 SUV Header
-      XC90
-      XC90 Image
       XC90 Learn
       XC90 Shop
     And the below options should be available in the Models Section:
@@ -66,20 +50,4 @@ Feature: Campaign page
       Our Cars URL
       Options
 
-  Scenario: User is verifying the options in Top Panel
-    When user clicks on Options in Top Panel Section
-    Then the below options should be available in the Top Panel options Section:
-      Volvo logo
-      Buy
-      Own
-      Why Volvo
-      Explore
-      More
-      International
-      Facebook
-    When user clicks on Buy in Top Panel options Section
-    Then the below options should be available in the Buy Section:
-      Purchase Header
-      Fleet sales
-      Used cars
 
