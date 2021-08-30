@@ -6,4 +6,4 @@ COPY requirements.txt /Test_Automation_Framework/requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 8000
 COPY . /Test_Automation_Framework
-CMD pytest
+CMD pytest -v
