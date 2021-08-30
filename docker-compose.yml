@@ -1,0 +1,26 @@
+  version: '3.8'
+  services:
+    selenium:
+      image: selenium/hub
+      ports:
+        - 4444:4444
+    chrome:
+      image: selenium/node-chrome-debug
+      depends_on:
+        - selenium
+      environment:
+        - HUB_HOST=selenium
+      ports:
+        - 5901:5900
+      volumes:
+        - /dev/shm:/dev/shm
+    pytest:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      stdin_open: true
+      tty: true
+      ports:
+        - "5000:5000"
+      depends_on:
+        - chrome

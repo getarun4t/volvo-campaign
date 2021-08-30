@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from steps.drivers import Chromedriver
 
 driver = Chromedriver.driver
-timeout = 3
+timeout = 15
 wait = WebDriverWait(driver, timeout)
 
 
