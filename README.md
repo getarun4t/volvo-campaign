@@ -1,5 +1,5 @@
 # volvo-campaign
-This is a project to test the Volvo Campaign on Car Safety
+This is a project to test the Volvo Campaign on Car Safety. This is not an exhaustive set of test cases, but demonstrates the functionality of the framework efficiently.
 
 ## Test Framework
 The test framework is designed using Pytest & Selenium. 
